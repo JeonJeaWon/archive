@@ -21,4 +21,6 @@ import archive.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', archive.views.home, name = 'home'),
+    path('archive/', archive.views.archivemain, name = 'archivemain'),
+    path('archive/<int:archive_id>', archive.views.archivedetail, name = 'archivedetail'),
 ]

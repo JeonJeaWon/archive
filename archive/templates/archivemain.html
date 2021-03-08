@@ -1,0 +1,10 @@
+<h1>archive main 페이지입니다.</h1>
+
+{% for archive in archives.all %}
+    <div class="container">
+        <h1>{{archive.title}}</h1>
+        <p>{{archive.pub_date}}</p>
+        <p>{{archive.date}}</p>
+        <p>{{archive.b_summary}}<a href="{% url 'archivedetail' archive.id %}">....more</a></p>
+    </div>
+{% endfor %}
