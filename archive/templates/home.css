@@ -1,0 +1,16 @@
+body{
+    background-color: #E2E2E2;
+}
+
+.nav_bar {
+    font-size: 2em;
+    color: #17C37B
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

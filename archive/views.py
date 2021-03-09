@@ -3,6 +3,9 @@ from .models import Archive
 
 def home(request):
     return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
     
 def archivemain(request):
     archives = Archive.objects
